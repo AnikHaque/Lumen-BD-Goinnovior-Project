@@ -1,0 +1,76 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+      /* Bottom shadow */ 0px 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color:#F8F8F8;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .imagesRow {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .BoxImg {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .BoxImg:hover {
+    transform: scale(1.1); 
+  }
+  
+  .caption {
+    text-align: center;
+    color: #333333;
+  }
+  
+  .discoverButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white !important;
+    background-color: rgba(0, 168, 80, 0.9) !important;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .imagesRow {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    }
+  }
+  

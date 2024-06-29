@@ -1,0 +1,115 @@
+
+.services{
+    background: #f1f1f1;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+.services h1{
+    margin-top: 40px;
+    display: inline;
+    text-transform: uppercase;
+    border-bottom: 4px solid rgba(3, 185, 91, 0.945);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+
+}
+.service{
+    display: inline-block;
+    width: calc(100% / 3);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color:rgba(3, 185, 91, 0.945);
+}
+ .service:hover{
+  background-color: rgba(133, 243, 186, 0.945);
+}
+ 
+/* .service i{
+    color: #3498db;
+    font-size: 34px;
+    margin-bottom: 30px;
+} */
+
+.service h2{
+    font-size: 18px;
+    font-family: 'Roboto, sans-serif';
+    text-transform: uppercase;
+    font-weight: 400;
+    color: white;
+}
+
+.service p{
+    color: white;
+    font-family: 'Roboto, sans-serif';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+hover_text:hover {
+  color: black;
+}
+
+ /* .service h2:hover{
+  color: black;
+}
+
+.service p:hover{
+  color: black;
+} */
+
+
+.fadeIn, .slideUp {
+    opacity: 0; 
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 1.2s ease-in-out forwards;
+  }
+  
+  .slideUp {
+    animation: slideUp 1.2s ease-in-out forwards;
+  }
+  
+  .delayedAppear {
+    animation-delay: 0.5s; 
+  }
+
+@media screen and (max-width: 800px){
+    .service{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 500px){
+    .service{
+        width: 100%;
+    }
+}

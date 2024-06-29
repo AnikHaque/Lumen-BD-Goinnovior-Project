@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .item {
+    padding: 16px;
+  }
+  
+  .image {
+    height: 18rem; /* Adjusted from h-72 to rem for responsiveness */
+    border-radius: 3rem 3rem 3rem 0; /* Adjusted from tailwind classes to rem */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .itemText {
+    flex: 1 0 50%;
+    max-width: 50%;
+    padding: 16px;
+  }
+  
+  .headline {
+    font-family: 'Roboto, sans-serif';
+    font-size: 1.75rem; /* Adjusted from 28px to rem for responsiveness */
+    color:rgba(0, 168, 80, 0.9);
+    font-weight: bold;
+  }
+  
+  .description {
+    font-family: 'Roboto, sans-serif';
+    text-align: justify;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .itemText {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  
+    .headline {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
